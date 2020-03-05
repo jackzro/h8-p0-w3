@@ -1,19 +1,21 @@
 function targetTerdekat(arr) {
   //  you can only write your code here!
-    var count =0
+    var countX =0
+    var countY=0
     var temp=''
     for(var i=0;i<arr.length;i++)
     {
         if(arr[i]=='x')
         {
-            count++
+            countX=i
             temp='x'
         }
         else if (arr[i]=='o')
         {
-            count++
+            countY=i
             temp='o'
         }
+      
     }
     return count
   }

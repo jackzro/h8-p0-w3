@@ -11,7 +11,7 @@ function dataHandling(data){
     {   
         
         var dataDiri= ('Nomor ID: ' + data[x][0]+ "\n" +'Nama Lengkap: ' +data[x][1]+'\n'+'TTL: '+data[x][2]+ ' ' +data[x][3]+'\n'+'Hobbi: '+data[x][4]+'\n\n')
-        var biodata=biodata+dataDiri
+        biodata=biodata+dataDiri
 
     }
     return biodata
