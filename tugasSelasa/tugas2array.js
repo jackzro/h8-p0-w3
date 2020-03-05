@@ -6,15 +6,15 @@ var input = [
 ]
 
 function dataHandling(data){
-    var z=''
+    var biodata=''
     for (var x=0;x<data.length;x++)
     {   
         
-        var y= ('Nomor ID: ' + data[x][0]+ "\n" +'Nama Lengkap: ' +data[x][1]+'\n'+'TTL: '+data[x][2]+ ' ' +data[x][3]+'\n'+'Hobbi: '+data[x][4]+'\n\n')
-        var z=z+y
+        var dataDiri= ('Nomor ID: ' + data[x][0]+ "\n" +'Nama Lengkap: ' +data[x][1]+'\n'+'TTL: '+data[x][2]+ ' ' +data[x][3]+'\n'+'Hobbi: '+data[x][4]+'\n\n')
+        var biodata=biodata+dataDiri
 
     }
-    return z
+    return biodata
     
 }
 
