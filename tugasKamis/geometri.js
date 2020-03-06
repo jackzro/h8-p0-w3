@@ -7,12 +7,11 @@ function tentukanDeretGeometri(arr) {
         } else if (arr[i] == arr[arr.length - 1]) {
             return true
         } else {
-
             return false
         }
     }
 }
-  
+
   // TEST CASES
   console.log(tentukanDeretGeometri([1, 3, 9, 27, 81])); // true
   console.log(tentukanDeretGeometri([2, 4, 8, 16, 32])); // true
