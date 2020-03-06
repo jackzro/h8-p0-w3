@@ -1,15 +1,13 @@
 function hitungJumlahKata(kalimat) {
     // you can only write your code here!
-    var count=0
-    for(var i=0;i<kalimat.length;i++)
-    {
-        if (kalimat[i]==" ")
-        {
+    var count = 0
+    for (var i = 0; i < kalimat.length; i++) {
+        if (kalimat[i] == " ") {
             count++
         }
     }
-    return count+1
-  }
+    return count + 1
+}
   
   // TEST CASES
   console.log(hitungJumlahKata('I have a dream')); // 4

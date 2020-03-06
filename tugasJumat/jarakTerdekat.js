@@ -1,24 +1,24 @@
 function targetTerdekat(arr) {
-  //  you can only write your code here!
-    var countX =0
-    var countY=0
-    var temp=''
-    for(var i=0;i<arr.length;i++)
-    {
-        if(arr[i]=='x')
-        {
-            countX=i
-            temp='x'
+    //  you can only write your code here!
+    var char = ''
+    var temp = ''
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] != ' ') {
+            if (arr[i] == char) {
+                return i - temp
+            } else {
+                if (arr[i] == 'x') {
+                    char = 'o';
+                } else if (arr[i] == 'o') {
+                    char = 'x';
+                }
+            }
+            temp = i
         }
-        else if (arr[i]=='o')
-        {
-            countY=i
-            temp='o'
-        }
-      
     }
-    return count
-  }
+    return 0
+}
+  
   
   // TEST CASES
   console.log(targetTerdekat([' ', ' ', 'o', ' ', ' ', 'x', ' ', 'x'])); // 3

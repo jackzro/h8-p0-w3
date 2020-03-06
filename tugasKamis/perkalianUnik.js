@@ -1,34 +1,23 @@
 function perkalianUnik(arr) {
     // you can only write your code here!
-    // var arrBaru=[]
-    // var simpan=1
-    // for(var i=0;i<arr.length;i++){
-    //     simpan=simpan*arr[i]
-    // }
-    // for(var i=0;i<arr.length;i++){
-    //     arrBaru[i]=simpan/arr[i]
-    // }
-    // return arrBaru
-    var count=-1
-    var arrBaru=[]
-    var total=1
-    for(var i=0;i<arr.length;i++){
-        for(var j=0;j<arr.length;j++){
+    var count = -1
+    var arrBaru = []
+    var total = 1
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = 0; j < arr.length; j++) {
             count++
-            if(i!=count){
-                total*=arr[j]
-            }
-            else{
+            if (i != count) {
+                total *= arr[j]
+            } else {
                 continue
             }
         }
-        arrBaru[i]=total
-        total=1
-        count=-1
-        // console.log(arrBaru[i])
+        arrBaru[i] = total
+        total = 1
+        count = -1
     }
     return arrBaru
-  }
+}
   
   // TEST CASES
   console.log(perkalianUnik([2, 4, 6])); // [24, 12, 8]

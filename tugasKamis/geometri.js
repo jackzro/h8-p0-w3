@@ -1,23 +1,18 @@
 function tentukanDeretGeometri(arr) {
     // you can only write your code here!
-    var count=arr[1]/arr[0]
+    var count = arr[1] / arr[0]
     //console.log(count)
-    for (var i=0;i<arr.length;i++)
-    {
-        if(arr[i+1]/arr[i]==count)
-        {
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i + 1] / arr[i] == count) {
             continue
-        }
-        else if (arr[i]==arr[arr.length-1])
-        {
+        } else if (arr[i] == arr[arr.length - 1]) {
             return true
-        }
-        else {
+        } else {
 
             return false
         }
-    }   
-  }
+    }
+}
   
   // TEST CASES
   console.log(tentukanDeretGeometri([1, 3, 9, 27, 81])); // true

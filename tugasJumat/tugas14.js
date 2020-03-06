@@ -1,30 +1,21 @@
 function mengelompokkanAngka(arr) {
     // you can only write your code here!
-    var arrGenap=[]
-    var arrGanjil=[]
-    var arrTiga=[]
-    var temp=[]
-    for(var i=0;i<arr.length;i++)
-    {
-        if(arr[i]%3==0){
-            temp.push(arr[i])
-            arrTiga.push(temp)
+    var arrGenap = []
+    var arrGanjil = []
+    var arrTiga = []
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 3 == 0) {
+            arrTiga.push(arr[i])
+        } else if (arr[i] % 2 != 0) {
+            arrGanjil.push(arr[i])
+        } else if (arr[i] % 2 == 0) {
+            arrGenap.push(arr[i])
         }
-        else if(arr[i]%2!=0)
-        {
-            temp.push(arr[i])
-            arrGanjil.push(temp)
-        }
-        else if (arr[i]%2==0)
-        {
-            temp.push(arr[i])
-            arrGenap.push(temp)
-        }
-
-        temp=[] 
     }
-    return arrBaru=[arrGenap,arrGanjil,arrTiga]
-  }
+    return arrBaru = [arrGenap, arrGanjil, arrTiga]
+}
+
+    
   
   // TEST CASES
   console.log(mengelompokkanAngka([2, 4, 6])); // [ [2, 4], [], [6] ]
