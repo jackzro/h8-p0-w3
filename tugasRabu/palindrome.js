@@ -4,7 +4,6 @@ function palindrome(kata) {
     for (var i = 0; i < kata.length; i++) {
         balik = kata[i] + balik
     }
-    console.log(balik)
     if (kata === balik) {
         return true
     } else {
