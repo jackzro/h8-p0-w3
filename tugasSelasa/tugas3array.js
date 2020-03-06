@@ -1,4 +1,4 @@
-var input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/01/1989", "Membaca"];
+var input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/12/1989", "Membaca"];
 
 function dataHandling2(kata) {
     kata.splice(1, 1, 'Roman Alamsyah Elsharawy')
@@ -49,24 +49,13 @@ function dataHandling2(kata) {
         case 12:
             console.log('Desember')
             break
+        default:
+            console.log("Bulan Invalid")
     }
 
-    var des = ubah.sort(function (a, b) {
-        return b - a
-    })
+    console.log(ubah.sort((a, b)=>b - a))
 
-    console.log(des)
-
-    function bubble(a) {
-        var temp
-        temp = a[0]
-        a[0] = a[1]
-        a[1] = a[2]
-        a[2] = temp
-        return a
-    }
-
-    console.log(bubble(ubah).join('-'))
+    console.log(kata[3].split('/').join('-'))
 
     var potong = kata[1].split(' ')
 

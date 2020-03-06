@@ -3,8 +3,6 @@ function angkaPalindrome(num) {
     var simpan = 0
     var balik = ' '
     var kosong = " "
-
-    // console.log(typeof num)
     if (num <= 8) {
         num++
         return num
@@ -16,7 +14,6 @@ function angkaPalindrome(num) {
             for (var i = 0; i < n.length; i++) {
                 kosong = n[i] + kosong
             }
-            // console.log(kosong) balik=kosong
         } while (kosong != num)
         return kosong;
     }

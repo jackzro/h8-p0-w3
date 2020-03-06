@@ -1,7 +1,6 @@
 function tentukanDeretGeometri(arr) {
     // you can only write your code here!
     var count = arr[1] / arr[0]
-    //console.log(count)
     for (var i = 0; i < arr.length; i++) {
         if (arr[i + 1] / arr[i] == count) {
             continue
