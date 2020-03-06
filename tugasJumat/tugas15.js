@@ -16,18 +16,15 @@ function groupAnimals(animals) {
             arrBaru = []
         }
     }
-for (let i = 0; i < arrAnimal.length; i++) {
-    for (let j = 0; j < arrAnimal.length-1; j++) {
-        if(arrAnimal[j][0][0]>arrAnimal[j+1][0][0])
-        {
-            temp=arrAnimal[j]
-            arrAnimal[j]=arrAnimal[j+1]
-            arrAnimal[j+1]=temp
+    for (let i = 0; i < arrAnimal.length; i++) {
+        for (let j = 0; j < arrAnimal.length - 1; j++) {
+            if (arrAnimal[j][0][0] > arrAnimal[j + 1][0][0]) {
+                temp = arrAnimal[j]
+                arrAnimal[j] = arrAnimal[j + 1]
+                arrAnimal[j + 1] = temp
+            }
         }
-        
     }
-    
-}
     return arrAnimal
 }
   
