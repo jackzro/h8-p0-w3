@@ -5,4 +5,4 @@ function balikString(kata) {
     }
     return balik
 }
-console.log(balikString('hello'))
+console.log(balikString('hello world!'))
